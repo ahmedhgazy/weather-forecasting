@@ -9,23 +9,36 @@ html {
 body {
   background-color: #fff;
   position: relative;
-  overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
-body::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 200%;
-  height: 200%;
-  background-image: url("./assets/images/sky.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  transform: translate(-40%, -50%) rotate(45deg); /* Adjust the angle as needed */
-  z-index: -1; /* Ensure it stays behind other content */
+@media (min-width: 700px) {
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background-image: url("./assets/images/sky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: rotate(180deg); /* Adjust the angle as needed */
+    z-index: -1; /* Ensure it stays behind other content */
+  }
 }
 
+@media (max-width: 600px) {
+  body::before {
+    content: "";
+    background-image: url("./assets/images/sky.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+}
 // Global
 
 ul {

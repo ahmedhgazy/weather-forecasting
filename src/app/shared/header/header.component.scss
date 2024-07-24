@@ -49,11 +49,12 @@ nav {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 470px) {
   .container {
+padding: 10px 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 4.5rem;
+    gap: 3rem;
   }
 }
