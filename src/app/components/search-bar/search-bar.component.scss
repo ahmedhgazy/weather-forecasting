@@ -1,0 +1,17 @@
+.search-bar-wrapper {
+  .input-wrapper {
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 38px;
+    overflow: hidden;
+    input[type="text"] {
+      background-color: transparent;
+      display: block;
+      border: 0;
+      outline: none;
+      padding: 20px;
+      width: 90%;
+      caret-color: #fff;
+    }
+  }
+}

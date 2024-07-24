@@ -1,0 +1,40 @@
+@import "../../../styles/bs_variables";
+nav {
+  height: 160px;
+  background-color: $body-bg;
+  width: 100% !important;
+  align-content: center;
+  a {
+    position: relative;
+    .logo-type {
+      .title {
+      }
+      small {
+        position: absolute;
+      }
+    }
+  }
+  .links {
+    ul > li {
+      a {
+        font-size: 2rem;
+        padding: 0.6rem 2rem;
+        border: 1px solid $primary;
+        border-radius: 38px;
+        transition: all 0.5s ease;
+        &:hover {
+          color: $primary !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4.5rem;
+  }
+}

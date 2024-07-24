@@ -1,0 +1,10 @@
+@import "../../../styles/bs_variables"; // bootstrap variables
+$card-main-color: #303344;
+.card {
+  background-color: $card-main-color;
+  .card-header {
+    background-color: rgba($body-bg, 0.1) !important;
+  }
+  .card-body {
+  }
+}
