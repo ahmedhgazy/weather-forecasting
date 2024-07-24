@@ -1,10 +1,12 @@
 @import "../../../styles/bs_variables"; // bootstrap variables
 $card-main-color: #303344;
 .card {
-  background-color: $card-main-color;
+  color: #000000;
+  background-color: transparent;
   .card-header {
-    background-color: rgba($body-bg, 0.1) !important;
+    background-color: transparent;
   }
   .card-body {
+    background-color: transparent;
   }
 }

@@ -1,16 +1,22 @@
 @import "../../../styles/bs_variables";
 nav {
   height: 160px;
-  background-color: $body-bg;
+  // background-color: $body-bg;
+  background-color: transparent;
+  color: #000000;
   width: 100% !important;
   align-content: center;
+  position: sticky;
+  top: 0;
   a {
     position: relative;
     .logo-type {
       .title {
+        color: #000000;
       }
       small {
         position: absolute;
+        color: #000000;
       }
     }
   }
@@ -18,12 +24,14 @@ nav {
     ul > li {
       a {
         font-size: 2rem;
+        color: #000000 !important;
         padding: 0.6rem 2rem;
-        border: 1px solid $primary;
+        border: 1px solid #000000;
         border-radius: 38px;
         transition: all 0.5s ease;
         &:hover {
           color: $primary !important;
+          border: 1px solid $primary;
         }
       }
     }
