@@ -1,12 +1,28 @@
-@import "../../../styles/bs_variables"; // bootstrap variables
-$card-main-color: #303344;
-.card {
-  color: #000000;
-  background-color: transparent;
-  .card-header {
-    background-color: transparent;
-  }
-  .card-body {
-    background-color: transparent;
-  }
+// @import "../../../styles/bs_variables"; // bootstrap variables
+// $card-main-color: #303344;
+// .card {
+//   color: #000000;
+//   background-color: transparent;
+//   .card-header {
+//     background-color: transparent;
+//   }
+//   .card-body {
+//     background-color: transparent;
+//   }
+// }
+
+.gradient-custom {
+  /* fallback for old browsers */
+  // background: #ffffff;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #00b4db, #0083b0);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  // background: linear-gradient(
+  //   to right,
+  //   rgba(255, 255, 255, 1),
+  //   rgba(255, 236, 210, 1)
+  // );
+  background: -webkit-linear-gradient(to right, #00b4db, #0083b0);
 }

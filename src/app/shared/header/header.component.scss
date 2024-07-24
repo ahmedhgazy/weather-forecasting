@@ -1,22 +1,32 @@
 @import "../../../styles/bs_variables";
 nav {
   height: 160px;
-  // background-color: $body-bg;
   background-color: transparent;
-  color: #000000;
   width: 100% !important;
   align-content: center;
   position: sticky;
   top: 0;
   a {
+    padding: 0.6rem 2rem;
+    // border: 1px solid $primary;
+    border-radius: 38px;
     position: relative;
+    transition: all 0.5s ease;
+    // &:hover .title {
+    //   color: $primary !important;
+    // }
+    // &:hover small {
+    //   color: $primary !important;
+    // }
     .logo-type {
       .title {
-        color: #000000;
+        color: #000;
+        transition: all 0.5s ease;
       }
       small {
         position: absolute;
-        color: #000000;
+        color: #000;
+        transition: all 0.5s ease;
       }
     }
   }
@@ -24,9 +34,10 @@ nav {
     ul > li {
       a {
         font-size: 2rem;
-        color: #000000 !important;
+        caret-color: $primary !important;
         padding: 0.6rem 2rem;
-        border: 1px solid #000000;
+        border: 1px solid $primary;
+        color: #333 !important;
         border-radius: 38px;
         transition: all 0.5s ease;
         &:hover {

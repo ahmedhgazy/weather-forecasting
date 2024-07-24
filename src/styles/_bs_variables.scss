@@ -7,12 +7,15 @@
 $font-family-sans-serif: "Roboto", "Open Sans", sans-serif;
 
 // Colors
-$primary: #009ad8;
+// $primary: #009ad8;
+$primary: #f9cf62;
 $secondary: #262936;
 $dark: #000;
 $body-bg: #262936;
 $body-color: #fff;
 $body-secondary-color: #bfc1c8;
+$utl-primary: rgba($primary, 0.2);
+$light-dark: #bfc1c8;
 
 // Spacing
 $spacer: 1rem !default;

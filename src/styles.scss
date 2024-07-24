@@ -8,8 +8,22 @@ html {
 
 body {
   background-color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200%;
+  height: 200%;
   background-image: url("./assets/images/sky.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  transform: translate(-40%, -50%) rotate(45deg); /* Adjust the angle as needed */
+  z-index: -1; /* Ensure it stays behind other content */
 }
 
 // Global
