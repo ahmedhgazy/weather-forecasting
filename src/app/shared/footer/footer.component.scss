@@ -1,8 +1,5 @@
 footer {
-  position: fixed;
   width: 100%;
-  bottom: 0;
-  z-index: 11111;
   background: linear-gradient(
     to right,
     rgb(0, 180, 219, 0.1),
@@ -20,10 +17,13 @@ footer {
   );
   div {
     p {
-      color: #eeeeeecf;
+      color: #333;
       span {
         font-style: italic;
         color: #f9cf62;
+        background-color: orangered;
+        color: transparent;
+        background-clip: text;
       }
     }
   }
