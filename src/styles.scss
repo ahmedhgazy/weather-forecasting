@@ -21,11 +21,12 @@ body {
     background-position: center center;
     left: 0;
     width: 100%;
+    object-fit: cover;
     height: 100%;
     background-image: url("./assets/images/sky.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    transform: rotate(180deg); /* Adjust the angle as needed */
+    // transform: rotate(); /* Adjust the angle as needed */
     z-index: -1; /* Ensure it stays behind other content */
   }
 }

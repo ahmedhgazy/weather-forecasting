@@ -1,53 +1,78 @@
-<!-- <div class="weather-details-wrraper">
+@if (weather) {
+<div class="weather-section mb-3">
   <div class="container">
-    <div class="row">
-      <div class="p-0">
-        <div class="card text-center p-0 border-0 text-dark">
-          <div class="card-header">
-            <h4>Day</h4>
-          </div>
-          <div class="container">
-            <div class="card-body my-3">
-              <h3 class="city">City</h3>
-              <div
-                class="text-center __temp--info d-flex justify-content-center align-items-center gap-3"
-              >
-                <h1>Temperature</h1>
-                <img src="" alt="img-Icon" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div> -->
-<!-- * whether details cards -->
-<div class="container mb-3">
-  <div
-    id="weatherCarousel"
-    class="carousel slide m-5"
-    data-mdb-ride="carousel"
-    data-mdb-carousel-init
-  >
-    <div class="carousel-inner rounded-5">
-      <div class="carousel-item active">
-        <div
-          class="d-flex justify-content-between align-items-center px-5 gradient-custom"
-          style="height: 230px"
+    <div
+      class="d-flex justify-content-between align-items-center px-5 gradient-custom"
+      style="height: 230px"
+    >
+      @if (weather) {
+      <div>
+        @if (today) {
+        <p class="text-center mx-auto text-dark">Today's weather</p>
+        <h2 class="text-dark display-2">
+          @if(unit==='C'){
+          <strong>{{ weather.current.temp_c }}°{{ unit }} </strong>
+          } @else {
+          <strong>{{ weather.current.temp_f }}°{{ unit }} </strong>
+
+          }
+        </h2>
+        } @else if(!today){
+        <p class="text-center mx-auto text-dark">Future weather</p>
+
+        <h2 class="text-dark display-2">
+          @if(unit==='C'){
+          <strong
+            >{{ weather.forecast.forecastday[0].day.avgtemp_c }}°{{ unit }}
+          </strong>
+          } @else {
+          <strong
+            >{{ weather.forecast.forecastday[0].day.avgtemp_f }}°{{ unit }}
+          </strong>
+
+          }
+        </h2>
+        }
+        <p class="text-dark mb-0 fs-5">{{ weather.location.name }}</p>
+
+        <button
+          (click)="toggleUnit()"
+          class="d-sm-blick btn-sm btn btn-warning mt-3"
         >
-          <div>
-            <h2 class="text-dark display-2"><strong>23°C</strong></h2>
-            <p class="text-dark mb-0">Coimbra, Portugal</p>
-          </div>
-          <div>
-            <img
-              src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-weather/ilu3.webp"
-              width="150px"
-            />
-          </div>
-        </div>
+          Toggle Unit
+        </button>
+      </div>
+      }
+      <div>
+        @if (today) { @if (weather.current.temp_c < 16) {
+        <img
+          src="../../../assets/images/cloud.png"
+          width="150px"
+          alt="No Images"
+        />
+        } @else if (weather.current.temp_c >=16 && weather.current.temp_c<=25) {
+        <img src="../../../assets/images/cloudy-day.png" width="150px" />
+
+        } @else {
+        <img src="../../../assets/images/sun.png" width="150px" />
+
+        } } @else if (!today) { @if
+        (weather.forecast.forecastday[0].day.avgtemp_c < 16) {
+        <img
+          src="../../../assets/images/cloud.png"
+          width="150px"
+          alt="No Images"
+        />
+        } @else if (weather.forecast.forecastday[0].day.avgtemp_c >=16 &&
+        weather.forecast.forecastday[0].day.avgtemp_c<=25) {
+        <img src="../../../assets/images/cloudy-day.png" width="150px" />
+
+        } @else {
+        <img src="../../../assets/images/sun.png" width="150px" />
+
+        } }
       </div>
     </div>
   </div>
 </div>
+}

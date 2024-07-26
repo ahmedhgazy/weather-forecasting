@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, inject, OnInit } from '@angular/core';
+import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './pages/home/home.component';
 
@@ -7,13 +7,8 @@ import { HomeComponent } from './pages/home/home.component';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, CommonModule, HomeComponent],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
+  template: '<app-home></app-home>',
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   title = 'weather-forecasting';
-
-  ngOnInit(): void {
-    console.log('Hello ');
-  }
 }

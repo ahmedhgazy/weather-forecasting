@@ -12,15 +12,10 @@ nav {
     border-radius: 38px;
     position: relative;
     transition: all 0.5s ease;
-    // &:hover .title {
-    //   color: $primary !important;
-    // }
-    // &:hover small {
-    //   color: $primary !important;
-    // }
+
     .logo-type {
       .title {
-        color: #000;
+        color: #000000;
         transition: all 0.5s ease;
       }
       small {
@@ -37,7 +32,7 @@ nav {
         caret-color: $primary !important;
         padding: 0.6rem 2rem;
         border: 1px solid $primary;
-        color: #333 !important;
+        color: #000000 !important;
         border-radius: 38px;
         transition: all 0.5s ease;
         &:hover {

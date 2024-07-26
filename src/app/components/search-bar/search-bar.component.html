@@ -3,10 +3,22 @@
     <div
       class="input-wrapper px-3 d-flex justify-content-between align-items-center"
     >
-      <input type="text" placeholder="find your location" />
-      <button class="btn btn-primary btn-outline-primary text-dark">
+      <input
+        (change)="FireSearchEvent()"
+        #searchWord
+        type="text"
+        placeholder="find your location"
+      />
+      <button
+        (click)="FireSearchEvent()"
+        class="btn btn-primary btn-outline-primary text-dark"
+      >
         Find
       </button>
     </div>
+    @if (error) {
+    <small class="text-warning px-3">{{ error }}</small>
+
+    }
   </div>
 </div>

@@ -23,6 +23,7 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  // ? Update the header when scrolling if needed !
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event: any): void {
     if (isPlatformBrowser(this.platformId)) {
@@ -32,7 +33,6 @@ export class HeaderComponent implements OnInit {
 
   userScroll(): void {
     const navbar = document.querySelector('.navbar');
-
     if (navbar) {
       if (window.scrollY > 50) {
         navbar.classList.add('border-bottom', 'navbar-sticky');
