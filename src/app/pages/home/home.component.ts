@@ -103,7 +103,7 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   // end subscriptions after component destruction
   ngOnDestroy() {
-    this.endSubs$.next(() => {});
+    this.endSubs$.next(null);
     this.endSubs$.complete();
   }
 }

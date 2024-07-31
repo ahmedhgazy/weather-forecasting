@@ -1,0 +1,16 @@
+footer {
+  width: 100%;
+  background: linear-gradient(to right, rgba(0, 180, 219, 0.1), rgba(0, 131, 176, 0.1)) !important;
+  background: -webkit-linear-gradient(to right, rgba(0, 180, 219, 0.1), rgba(0, 131, 176, 0.1));
+}
+footer div p {
+  color: #333;
+}
+footer div p span {
+  font-style: italic;
+  color: #f9cf62;
+  background-color: orangered;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+}/*# sourceMappingURL=footer.component.css.map */

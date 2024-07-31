@@ -1,27 +1,29 @@
 <app-header></app-header>
-<div class="wrapper pb-2">
-  <app-search-bar
-    (searchEvent)="getWeatherForecasting($event)"
-  ></app-search-bar>
+<div class="container">
+  <div class="wrapper pb-2">
+    <app-search-bar
+      (searchEvent)="getWeatherForecasting($event)"
+    ></app-search-bar>
 
-  @if(isLoading){
-  <section class="d-flex justify-content-center align-items-center">
-    <app-loading></app-loading>
-  </section>
-  }
+    @if(isLoading){
+    <section class="d-flex justify-content-center align-items-center">
+      <app-loading></app-loading>
+    </section>
+    }
 
-  <div class="row p-0 m-0">
-    <div class="col-12 col-md-6 p-0 m-0">
-      <app-weather-details
-        [today]="true"
-        [weather]="weatherData"
-      ></app-weather-details>
-    </div>
-    <div class="col-12 col-md-6 p-0 m-0">
-      <app-weather-details
-        [today]="false"
-        [weather]="tomorrowData"
-      ></app-weather-details>
+    <div class="row p-0 m-0">
+      <div class="col-12 col-md-6 p-0 m-0">
+        <app-weather-details
+          [today]="true"
+          [weather]="weatherData"
+        ></app-weather-details>
+      </div>
+      <div class="col-12 col-md-6 p-0 m-0">
+        <app-weather-details
+          [today]="false"
+          [weather]="tomorrowData"
+        ></app-weather-details>
+      </div>
     </div>
   </div>
 </div>
