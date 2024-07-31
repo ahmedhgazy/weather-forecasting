@@ -1,5 +1,9 @@
 # WeatherForecasting
 
+# weather app creating using Angular(v17) Bootstrap and free wheather API (https://www.weatherapi.com/docs/)
+
+# Demo : (https://weather-forecasting-losnnrydr-ahmedhgazys-projects.vercel.app/home)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
 
 ## Development server
