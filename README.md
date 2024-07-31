@@ -1,6 +1,6 @@
 # WeatherForecasting
 
-# weather app creating using Angular(v17) Bootstrap and free wheather API (https://www.weatherapi.com/docs/)
+# weather app creating using Angular(v17) , Bootstrap(5.3) and free Weather API (https://www.weatherapi.com/docs/)
 
 # Demo : (https://weather-forecasting-losnnrydr-ahmedhgazys-projects.vercel.app/home)
 
